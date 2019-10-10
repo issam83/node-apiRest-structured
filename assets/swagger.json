@@ -1,0 +1,100 @@
+{
+    "info": {
+        "title": "API REST documentation",
+        "version": "1.0.0",
+        "license": {
+            "name": "ISC"
+        },
+        "description": "API REST pour gérer des utilisateurs"
+    },
+    "basePath": "/api/v1",
+    "host": "localhost:/8080",
+    "tags": [
+        {
+            "name": "membres",
+            "description": "Méthode permettant de gérer des utilisateurs"
+        }
+    ],
+    "paths": {
+        "membres/{id}": {
+            "get": {
+                "tags":["membres"],
+                "summary": "membres/{id}",
+                "consumes": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true
+                    }
+                ],
+                "responses": {}
+            },
+            "put": {
+                "tags":["membres"],
+                "summary": "membres/{id}",
+                "consumes": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true
+                    }
+                ],
+                "responses": {}
+            },
+            "delete": {
+                "tags":["membres"],
+                "summary": "membres/{id}",
+                "consumes": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true
+                    }
+                ],
+                "responses": {}
+            }
+        },
+        "membres": {
+            "get": {
+                "tags":["membres"],
+                "summary": "membres",
+                "consumes": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "max",
+                        "in": "query",
+                        "required": false
+                    }
+                ],
+                "responses": {}
+            },
+            "post": {
+                "tags":["membres"],
+                "summary": "membres",
+                "consumes": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "name",
+                        "in": "body",
+                        "required": true
+                    }
+                ],
+                "responses": {}
+            }
+        }
+    },
+    "swagger": "2.0"
+}
